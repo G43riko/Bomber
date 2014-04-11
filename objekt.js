@@ -1,6 +1,6 @@
-//pole všetkých objektov v scéne
+//array of all objects in scene
 var scene = [];
-//konštruktor pre Objekt
+//constructor for Object
 Object = function(x,y,width,height){
   this.x=x;
   this.y=y;
@@ -9,10 +9,10 @@ Object = function(x,y,width,height){
   this.dx=0;
   this.dy=0;
 }
-//prototyp pre Objekt
+//prototype for Objekt
 Object.prototype = {
   draw:function(){
-    //vykreslí ma
+    //draw me
   }
   move:(){
     this.x+=this.dx;
@@ -20,8 +20,8 @@ Object.prototype = {
     this.draw();
   }
 }
-//pridá X Objektov do scény
+//add X Objects to scene
 for(i=0;i<X;i++){
-  //pridá nové objekty s unikátnimy suradnicami a velkosťou
+  //add new Boject with unique coordinates and size
   scene.pusch(new Object(X,Y,WIDTH,HEIGHT));
 }
