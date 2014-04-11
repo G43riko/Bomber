@@ -1,22 +1,22 @@
 //non tested version
 Animation=function(x,y,num_x,num_y,iwidth,iheight,width,height,url){
-  this.x=x;
-  this.y=y;
-  this.num_x=num_x;
-  this.num_y=num_y;
-  this.iwidth=iwidth;
-  this.iheight=iheight;
-  this.width=width;
-  this.height=height;
+  this.x=x;//x of animation 
+  this.y=y;//y of animation
+  this.num_x=num_x;//number of images in line
+  this.num_y=num_y;//number of images in row
+  this.iwidth=iwidth;//image width in pixels
+  this.iheight=iheight;//image height in pixels
+  this.width=width;//animation width
+  this.height=height;//animation height
   this.image=new Image();
-  this.imgage.url=url;
+  this.imgage.url=url;//imga url
   this.sur=[0,0];
 }
 Animation.prototype={
   i:0,   
   draw:function(){
     if(this.i>=this.num_x*this.num_y){         
-       explosions.shift();//remove this animation from array
+       scene.splice(scene.indexOf(this),1);//remove this animation from array scene
        return;
     }
     this.i++;
