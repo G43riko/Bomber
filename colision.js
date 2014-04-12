@@ -12,7 +12,7 @@ return 0;
 
 
 //this is basic CircleCircle colision
-function acolision(a,b){
+function colision(a,b){
   dst_x=a.x-b.x;
   dst_y=a.y-b.y;
   rad_a=a.size;
