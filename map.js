@@ -13,7 +13,7 @@ var mapa= [
 ];
 for(var i=0;i<mapa.length;i++){
   for(var j=0;j<mapa[i].length;j++){
-    if(mapa[j][i]==1){
+    if(mapa[i][j]==1){
       //do samething for every value in map
     }
   }
