@@ -13,8 +13,8 @@ return 0;
 
 //this is basic CircleCircle colision
 function colision(a,b){
-  dst_x=a.x-b.x;
-  dst_y=a.y-b.y;
+  dstX=a.x-b.x;
+  dstY=a.y-b.y;
   rad_a=a.size;
   rad_b=b.size;
   dist = sqrt((distX * distX) + (distY * distY));
