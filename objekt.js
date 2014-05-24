@@ -13,15 +13,14 @@ Object = function(x,y,width,height){
 Object.prototype = {
   draw:function(){
     //draw me
-  }
-  move:(){
+  },
+  move:function(){
     this.x+=this.dx;
     this.y+=this.dy;
-    this.draw();
   }
 }
 //add X Objects to scene
 for(i=0;i<X;i++){
   //add new Boject with unique coordinates and size
-  scene.pusch(new Object(X,Y,WIDTH,HEIGHT));
+  scene.push(new Object(X,Y,WIDTH,HEIGHT));
 }
